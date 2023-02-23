@@ -1,7 +1,13 @@
-from .views import TestAPIView
+from .views import CategoryCreateListAPIView, CategoryGenericAPIView, BrandModelListCreateAPIView, BrandModelGenericAPIView
 from django.urls import path 
 
 urlpatterns = [
-    path("test-api/", TestAPIView.as_view(), name="TestAPIView"),
+    path("category-list-create-api/", CategoryCreateListAPIView.as_view(), name="CategoryCreateListAPIView"),
+    path("category-list-create-api/<id>/", CategoryGenericAPIView.as_view(), name="CategoryGenericAPIView"),
+
+    path("brand-list-create-apiview/", BrandModelListCreateAPIView.as_view(), name="BrandModelListCreateAPIView"),
+    path("brand-list-create-apiview/<id>/", BrandModelGenericAPIView.as_view(), name="BrandModelGenericAPIView"),
+   
+    
 ]
 
