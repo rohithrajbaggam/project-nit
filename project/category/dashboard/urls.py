@@ -8,6 +8,5 @@ urlpatterns = [
     path("brand-list-create-apiview/", BrandModelListCreateAPIView.as_view(), name="BrandModelListCreateAPIView"),
     path("brand-list-create-apiview/<id>/", BrandModelGenericAPIView.as_view(), name="BrandModelGenericAPIView"),
    
-    
 ]
 

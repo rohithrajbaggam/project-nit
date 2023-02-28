@@ -10,4 +10,12 @@ class UserWishlistModel(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+"""
+
+Dashboard -> It will display All wishlists -> filter -> GET
+
+Website -> We will display products with login user -> POST/PUT, GET, DELETE
+
+"""
+
 
